@@ -16,6 +16,6 @@ echo "Ficha del Sr./Sra " . $nombre . " (sexo:" . $sexo . ") nacido el " . $fNac
 <hr/>
 <?php
 foreach($_REQUEST as $v => $valor){
-    echo "Elemento del formulario con name=".$v.": ".$valor."<br/>" ;
+    echo "Elemento del formulario con valor del atributo name = ".$v." = ".$valor."<br/>" ;
 }
 ?>
