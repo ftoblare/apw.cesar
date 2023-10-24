@@ -3,19 +3,19 @@ $nombre = $_REQUEST['nombre'];
 $fNacimiento = $_REQUEST['nacimiento'];
 $sexo = $_REQUEST['sexo'];
 
+echo "<h3>Retorno para el formulario del ejercicio 19</h3>";
 echo "Nombre: ".$nombre."<br/>";
 echo "Fecha de nacimiento: ".$fNacimiento."<br/>";
 echo "Sexo: ".$sexo."<br/>";
 ?>
 <hr/>
-
-<?php
-echo "Ficha del Sr./Sra " . $nombre . " (sexo:" . $sexo . ") nacido el " . $fNacimiento . ".<br/>" 
-?>
-
 <hr/>
 <?php
+echo "Elementos del formulario con formato... &lt;valor de name&gt; = &lt;valor dado al control&gt;<br/>";
+echo "<ul>";
 foreach($_REQUEST as $v => $valor){
-    echo "Elemento del formulario con valor de su atributo name ( ".$v." = ".$valor." )<br/>" ;
+    echo "<li>".$v." = ".$valor." </li>" ;
 }
+echo "</ul>";
+
 ?>
