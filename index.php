@@ -21,6 +21,7 @@ echo "Sexo: ".$sexo."<br/>";
 ?>
 <hr/>
 <hr/>
+<hr/>
 <?php
 echo "Elementos del formulario con formato... &lt;valor de name&gt; = &lt;valor dado al control&gt;<br/>";
 echo "<ul>";
