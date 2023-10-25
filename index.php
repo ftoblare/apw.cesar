@@ -1,7 +1,18 @@
 <?php
-$nombre = $_REQUEST['nombre'];
-$fNacimiento = $_REQUEST['nacimiento'];
-$sexo = $_REQUEST['sexo'];
+switch($_SERVER['REQUEST_METHOD'])
+{
+    case 'GET':
+        $nombre = $_GET['nombre'];
+        $fNacimiento = $_GET['nacimiento'];
+        $sexo = $_GET['sexo'];
+        break;
+    case 'POST':
+        $nombre = $_POST['nombre'];
+        $fNacimiento = $_POST['nacimiento'];
+        $sexo = $_POST['sexo'];
+        break;
+}
+
 
 echo "<h3>Retorno para el formulario del ejercicio 19</h3>";
 echo "Nombre: ".$nombre."<br/>";
