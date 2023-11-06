@@ -25,8 +25,18 @@ echo "Sexo: ".$sexo."<br/>";
 <?php
 echo "Elementos del formulario con formato... &lt;valor de name&gt; = &lt;valor dado al control&gt;<br/>";
 echo "<ul>";
-foreach($_REQUEST as $v => $valor){
-    echo "<li>".$v." = ".$valor." </li>" ;
+switch($_SERVER['REQUEST_METHOD'])
+{
+    case 'GET':
+        foreach($_GET as $v => $valor){
+            echo "<li>".$v." = ".$valor." </li>" ;
+        }
+        break;
+    case 'POST':
+        foreach($_POST as $v => $valor){
+            echo "<li>".$v." = ".$valor." </li>" ;
+        }
+        break;
 }
 echo "</ul>";
 
