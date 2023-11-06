@@ -14,7 +14,7 @@ switch($_SERVER['REQUEST_METHOD'])
 }
 
 
-echo "<h3>Retorno para el formulario del ejercicio 19</h3>";
+echo "<h3>Retorno variable recibidas de un formulario por el método ".$_SERVER['REQUEST_METHOD']."</h3>";
 echo "Nombre: ".$nombre."<br/>";
 echo "Fecha de nacimiento: ".$fNacimiento."<br/>";
 echo "Sexo: ".$sexo."<br/>";
